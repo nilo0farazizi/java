@@ -1,0 +1,33 @@
+create database footbal;
+use footbal;
+
+create table matchr
+(
+    ID        int                  null,
+    TeamONE   varchar(50)          null,
+    TeamTWO   varchar(50)          null,
+    name      varchar(50)          null,
+    bargozari tinyint(1) default 0 null,
+    resultOne int                  null,
+    resultTow int                  null
+);
+
+create table prediction
+(
+    theamOne int         null,
+    TheamTwo int         null,
+    username varchar(50) null,
+    matchId  int         null
+);
+
+create table user
+(
+    id  int auto_increment
+        primary key,
+    first_name varchar(50) not null,
+    last_name  varchar(50) not null,
+    password   varchar(50) not null,
+    username   varchar(50) null,
+    emtiyaz    int         null
+);
+
